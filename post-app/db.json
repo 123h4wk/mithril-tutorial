@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "HTTP Title 1",
+      "body": "HTTP Body 1",
+      "author": {
+        "email": "dummy-user@example.com",
+        "name": "ダミーユーザー"
+      }
+    }
+  ]
+}
