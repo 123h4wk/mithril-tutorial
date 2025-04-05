@@ -23,8 +23,8 @@ o.spec('PostForm', () => {
     await nextTick(out)
 
     const post = (await postService.fetchCollection()).items[0]
-    o(post.title).equals('新規作成するタイトル')`入力した値でタイトルが作成されていること`
-    o(post.body).equals('新規作成する本文')`入力した値で本文が作成されていること`
+    o(post.title).equals('新規作成するタイトル')`入力した値でタイトルが作成されること`
+    o(post.body).equals('新規作成する本文')`入力した値で本文が作成されること`
     o(m.route.set.args[0]).equals(`/posts/${post.id}`)`詳細画面へ遷移すること`
   })
 
